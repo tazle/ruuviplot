@@ -1,0 +1,22 @@
+{
+    "plots": [
+	{
+	    "ylabel": "Pressure (hPa)",
+	    "title": "Pressure",
+	    "datafile": "pressure.csv",
+	    "plotfile": "output/pressure-__LENGTH__.png"
+	},
+	{
+	    "ylabel": "Temperature (°C)",
+	    "title": "Temperature",
+	    "plotfile":"output/temperature-__LENGTH__.png",
+	    "datafile": "temperature.csv"
+	},
+	{
+	    "ylabel": "Relative Humidity (%)",
+	    "title": "Humidity",
+	    "plotfile": "output/humidity-__LENGTH__.png",
+	    "datafile": "humidity.csv"
+	}
+    ]
+}

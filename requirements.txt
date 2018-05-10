@@ -1,0 +1,5 @@
+influxdb
+iso8601
+matplotlib
+pandas
+numpy
