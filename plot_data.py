@@ -1,7 +1,7 @@
 import sys
 
 if len(sys.argv) < 2:
-    print("Usage: plot_data.py <conf-file>")
+    print("Usage: plot_data.py <conf-file>", file=sys.stderr)
     sys.exit(1)
 
 import pandas as pd
