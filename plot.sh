@@ -11,3 +11,8 @@ sed -i -es/__LENGTH__/$LENGTH/ "$plotconf"
 
 python3 plot_data.py "$plotconf"
 
+files=$(jq -r .plots[].plotfile "$plotconf")
+tar cf _out.tar $files
+truncate -s 0 out.tar
+cat _out.tar >> out.tar
+

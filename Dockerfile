@@ -8,7 +8,8 @@ COPY requirements.txt /
 RUN pip3 install -r requirements.txt
 RUN apt-get install --no-install-recommends -y libatlas3-base libfreetype6
 RUN mkdir /output
+RUN apt-get install --no-install-recommends -y jq
 
-ENTRYPOINT /plot.sh
+ENTRYPOINT ["/plot.sh"]
 
 COPY plot.sh plot-template.json data_for_plot.py plot_data.py /
